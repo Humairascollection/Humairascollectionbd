@@ -1,0 +1,12 @@
+{
+  "products": [
+    {"id":"p001","name":"Premium Ladies Kurti","sku":"HC-KUR-001","category":"Women","mrp":1500,"price":1200,"stock":15,"image":"","featured":true,"newArrival":true,"flashSale":true,"preorder":false,"active":true,"description":"Elegant premium ladies kurti."},
+    {"id":"p002","name":"Elegant Hand Bag","sku":"HC-BAG-001","category":"Bags","mrp":1200,"price":950,"stock":8,"image":"","featured":true,"newArrival":false,"flashSale":true,"preorder":false,"active":true,"description":"Stylish everyday hand bag."},
+    {"id":"p003","name":"Classic Fashion Shoes","sku":"HC-SHO-001","category":"Shoes","mrp":2200,"price":1690,"stock":12,"image":"","featured":true,"newArrival":true,"flashSale":false,"preorder":false,"active":true,"description":"Classic fashion footwear."},
+    {"id":"p004","name":"Luxury Beauty Set","sku":"HC-BEA-001","category":"Beauty","mrp":1800,"price":1350,"stock":5,"image":"","featured":true,"newArrival":true,"flashSale":true,"preorder":false,"active":true,"description":"Premium beauty set."},
+    {"id":"p005","name":"Premium Jewellery Set","sku":"HC-JWL-001","category":"Jewellery","mrp":2500,"price":1990,"stock":7,"image":"","featured":false,"newArrival":true,"flashSale":false,"preorder":false,"active":true,"description":"Elegant jewellery collection."},
+    {"id":"p006","name":"Silk Fashion Scarf","sku":"HC-SCF-001","category":"Accessories","mrp":900,"price":690,"stock":20,"image":"","featured":false,"newArrival":false,"flashSale":false,"preorder":false,"active":true,"description":"Soft silk fashion scarf."},
+    {"id":"p007","name":"Designer Dress","sku":"HC-DRS-001","category":"Women","mrp":3200,"price":2490,"stock":9,"image":"","featured":true,"newArrival":true,"flashSale":true,"preorder":false,"active":true,"description":"Designer fashion dress."},
+    {"id":"p008","name":"Pre-order Premium Gown","sku":"HC-GWN-001","category":"Women","mrp":4500,"price":3690,"stock":0,"image":"","featured":true,"newArrival":true,"flashSale":false,"preorder":true,"active":true,"arrival":"2026-09-15","description":"Premium gown available for pre-order."}
+  ]
+}

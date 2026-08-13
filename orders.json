@@ -1,0 +1,7 @@
+{
+  "orders": [
+    {"id":"HC-2026-00025","customer":"Rahim Ahmed","total":3450,"payment":"COD","paymentStatus":"Pending","status":"Pending","createdAt":"2026-08-13"},
+    {"id":"HC-2026-00024","customer":"Sumaiya Akter","total":2800,"payment":"Online","paymentStatus":"Paid","status":"Processing","createdAt":"2026-08-12"},
+    {"id":"HC-2026-00023","customer":"Karim Hasan","total":1950,"payment":"COD","paymentStatus":"Pending","status":"Shipped","createdAt":"2026-08-11"}
+  ]
+}
