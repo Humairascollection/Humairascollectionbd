@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin — Humaira's Collection</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="admin-body">
+<div class="admin-layout">
+  <aside class="sidebar">
+    <a class="logo" href="index.html">Humaira's <span>Collection</span></a>
+    <p class="admin-label">ADMIN PANEL</p>
+    <a class="active" href="#dashboard">📊 Dashboard</a>
+    <a href="#products">🛍️ Products</a>
+    <a href="#orders">📦 Orders</a>
+    <a href="#offers">🏷️ Offers</a>
+    <a href="#customers">👥 Customers</a>
+    <a href="#settings">⚙️ Settings</a>
+    <a href="index.html">↗ Storefront</a>
+  </aside>
+
+  <main class="admin-main">
+    <div class="admin-top"><div><h1>Dashboard</h1><p>Manage your store from one place.</p></div><button id="addProductBtn" class="btn">+ Add Product</button></div>
+
+    <section id="dashboard" class="stats">
+      <div class="stat"><small>Total Products</small><strong id="statProducts">0</strong></div>
+      <div class="stat"><small>Active Products</small><strong id="statActive">0</strong></div>
+      <div class="stat"><small>Orders</small><strong id="statOrders">0</strong></div>
+      <div class="stat"><small>Sales</small><strong id="statSales">৳0</strong></div>
+    </section>
+
+    <section id="products" class="admin-card">
+      <div class="section-head"><h2>Products</h2><input id="adminSearch" class="admin-search" placeholder="Search products..."></div>
+      <div class="table-wrap">
+        <table><thead><tr><th>Product</th><th>Category</th><th>Price</th><th>Stock</th><th>Status</th><th>Actions</th></tr></thead>
+        <tbody id="adminProductTable"></tbody></table>
+      </div>
+    </section>
+
+    <section id="orders" class="admin-card">
+      <div class="section-head"><h2>Recent Orders</h2></div>
+      <div class="table-wrap"><table><thead><tr><th>Order</th><th>Customer</th><th>Total</th><th>Payment</th><th>Status</th></tr></thead><tbody id="orderTable"></tbody></table></div>
+    </section>
+  </main>
+</div>
+
+<div id="productModal" class="modal hidden">
+  <div class="modal-box">
+    <div class="modal-head"><h2 id="modalTitle">Add Product</h2><button id="closeModal">×</button></div>
+    <form id="productForm">
+      <input type="hidden" id="productId">
+      <div class="form-grid">
+        <label>Product Name<input id="name" required></label>
+        <label>SKU<input id="sku" required></label>
+        <label>Category<select id="category"></select></label>
+        <label>MRP<input id="mrp" type="number" min="0" required></label>
+        <label>Selling Price<input id="price" type="number" min="0" required></label>
+        <label>Stock<input id="stock" type="number" min="0" required></label>
+        <label>Image URL<input id="image" placeholder="assets/images/product.jpg"></label>
+        <label>Expected Arrival<input id="arrival" type="date"></label>
+      </div>
+      <label>Description<textarea id="description" rows="4"></textarea></label>
+      <div class="checks">
+        <label><input id="featured" type="checkbox"> Featured</label>
+        <label><input id="newArrival" type="checkbox"> New Arrival</label>
+        <label><input id="flashSale" type="checkbox"> Flash Sale</label>
+        <label><input id="preorder" type="checkbox"> Pre-order</label>
+        <label><input id="active" type="checkbox" checked> Active</label>
+      </div>
+      <p id="discountPreview" class="discount-preview">Discount: 0%</p>
+      <button class="btn full" type="submit">Save Product</button>
+    </form>
+  </div>
+</div>
+<script src="js/admin.js"></script>
+</body>
+</html>

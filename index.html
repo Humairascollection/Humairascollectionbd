@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Humaira's Collection - modern e-commerce storefront">
+<title>Humaira's Collection</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-main">
+    <a class="logo" href="index.html">Humaira's <span>Collection</span></a>
+    <div class="search-wrap">
+      <input id="searchInput" type="search" placeholder="Search products..." aria-label="Search products">
+      <span>⌕</span>
+    </div>
+    <div class="header-actions">
+      <button class="circle" id="wishlistBtn" aria-label="Wishlist">♡</button>
+      <button class="circle" id="cartBtn" aria-label="Cart">🛒<b id="cartCount">0</b></button>
+      <button class="circle" id="profileBtn" aria-label="Profile">👤</button>
+    </div>
+  </div>
+  <nav>
+    <div class="container nav">
+      <a href="index.html">Home</a>
+      <a href="#categories">Categories</a>
+      <a href="#offers">Offers</a>
+      <a href="#products">New Arrivals</a>
+      <a href="#flash">Flash Sale</a>
+      <a href="#preorder">Pre-order</a>
+    </div>
+  </nav>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <div>
+      <small>NEW SEASON COLLECTION</small>
+      <h1>Style that feels uniquely yours.</h1>
+      <p>Discover fashion, accessories and everyday essentials with exclusive offers from Humaira's Collection.</p>
+      <a class="btn" href="#products">Shop Now →</a>
+    </div>
+    <div class="hero-art">🛍️</div>
+  </section>
+
+  <section id="categories" class="section">
+    <div class="section-head"><h2>Shop by Category</h2><a href="#products">View All</a></div>
+    <div id="categoryGrid" class="categories"></div>
+  </section>
+
+  <section id="products" class="section">
+    <div class="section-head"><h2>Featured Products</h2><span id="resultInfo"></span></div>
+    <div id="productGrid" class="products"></div>
+  </section>
+
+  <section id="flash" class="section dark-section">
+    <div class="section-head"><h2>🔥 Flash Sale</h2><a href="#products">Shop Deals →</a></div>
+    <div id="flashGrid" class="products"></div>
+  </section>
+
+  <section id="offers" class="section">
+    <div class="section-head"><h2>Special Offers</h2></div>
+    <div id="offerGrid" class="offer-grid"></div>
+  </section>
+
+  <section id="preorder" class="section">
+    <div class="section-head"><h2>📦 Pre-order Collection</h2></div>
+    <div id="preorderGrid" class="products"></div>
+  </section>
+</main>
+
+<div id="drawerBackdrop" class="backdrop hidden"></div>
+<aside id="cartDrawer" class="drawer">
+  <div class="drawer-head"><h2>Your Cart</h2><button id="closeCart">×</button></div>
+  <div id="cartItems" class="cart-items"></div>
+  <div class="cart-summary">
+    <div><span>Subtotal</span><strong id="cartSubtotal">৳0</strong></div>
+    <div><span>Delivery</span><strong>৳80</strong></div>
+    <div class="total"><span>Total</span><strong id="cartTotal">৳80</strong></div>
+    <button id="checkoutBtn" class="btn full">Proceed to Checkout</button>
+  </div>
+</aside>
+
+<div id="toast" class="toast"></div>
+
+<footer>
+  <div class="container footer-grid">
+    <div><h3>Humaira's <span>Collection</span></h3><p>Your Style, Your Choice.</p></div>
+    <div><h4>Shop</h4><a href="#categories">Categories</a><a href="#offers">Offers</a><a href="#preorder">Pre-order</a></div>
+    <div><h4>Customer Care</h4><a href="#">Orders</a><a href="#">Delivery</a><a href="#">Returns</a></div>
+    <div><h4>Admin</h4><a href="admin.html">Admin Panel</a></div>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
